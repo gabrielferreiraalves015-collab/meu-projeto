@@ -26,10 +26,12 @@ const features = [
 ];
 
 const specs = [
-  { label: "Dose por Porção", value: "400mg de Magnésio Elementar" },
-  { label: "Forma", value: "Glicinato de Magnésio" },
-  { label: "Porções", value: "60 cápsulas (2 meses)" },
-  { label: "Sem", value: "Glúten, Lactose, Soja, GMO" }
+  { label: "Produto", value: "Magnesium Breakthrough Versão 4.0" },
+  { label: "Quantidade", value: "90 cápsulas veganas" },
+  { label: "Duração", value: "30 dias (dose: 3 cápsulas/dia)" },
+  { label: "Modo de Usar", value: "3 cápsulas ao dia, preferencialmente à noite" },
+  { label: "Isenções", value: "Sem glúten, soja, laticínios, OGM" },
+  { label: "Adequado para", value: "Vegetarianos e veganos" }
 ];
 
 export function ProductInfo() {
@@ -49,10 +51,15 @@ export function ProductInfo() {
           <div className="space-y-8">
             <div>
               <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-                Qualidade Premium que Você Pode Confiar
+                Fórmula Científica Inigualável
               </h2>
               <p className="text-lg text-muted-foreground">
-                Formulado com a forma mais biodisponível de magnésio para resultados reais e duradouros
+                7 formas de magnésio para absorção e eficácia máximas. Ao contrário dos suplementos comuns, 
+                Magnesium Breakthrough é projetado para resultados reais.
+              </p>
+              <p className="text-sm text-muted-foreground mt-3 italic">
+                "Eu uso magnésio para qualquer pessoa que queira otimizar sua saúde cardiovascular." 
+                - Dr. Robert Maki, ND
               </p>
             </div>
 
