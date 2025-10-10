@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Star } from "lucide-react";
+import { Shield, Star } from "lucide-react";
 import heroImage from "@assets/stock_images/supplement_bottle_pr_02a0f8ae.jpg";
 
 export function Hero() {
@@ -11,31 +11,32 @@ export function Hero() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-                Transforme Sua Saúde com{" "}
-                <span className="text-primary">Magnésio Premium</span>
+              <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+                Magnesium Breakthrough: A Única Fórmula do Mundo com{" "}
+                <span className="text-primary">7 Formas de Magnésio</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground">
-                Fórmula cientificamente comprovada para melhorar sono, reduzir estresse
-                e aumentar sua energia naturalmente.
+                Para reverter a deficiência crônica, reduzir o estresse e acelerar seu metabolismo. 
+                Você viu a pesquisa. Funciona. Garantia de 365 dias ou seu dinheiro de volta.
               </p>
             </div>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col gap-4">
               <Button 
                 size="lg" 
-                className="bg-chart-2 hover:bg-chart-2 text-white border-chart-2"
+                className="bg-chart-2 hover:bg-chart-2 text-white border-chart-2 text-base"
                 data-testid="button-hero-cta"
               >
-                Começar Agora <ArrowRight className="ml-2 h-5 w-5" />
+                👉 SIM, QUERO MEU MAGNESIUM BREAKTHROUGH AGORA!
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline"
-                data-testid="button-learn-more"
-              >
-                Saiba Mais
-              </Button>
+              <div className="flex items-center justify-center gap-4 text-sm">
+                <div className="flex items-center gap-2">
+                  <Shield className="h-4 w-4 text-primary" />
+                  <span className="font-medium">PEDIDO 100% SEGURO</span>
+                </div>
+                <span className="text-muted-foreground">|</span>
+                <span className="text-muted-foreground">Formas de pagamento aceitas</span>
+              </div>
             </div>
 
             <div className="flex items-center gap-6 pt-4">
