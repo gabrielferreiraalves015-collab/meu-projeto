@@ -130,13 +130,28 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-slate-800 pt-8">
+        <div className="border-t border-slate-800 pt-8 space-y-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
             <p data-testid="text-copyright">
-              © 2025 Magnésio Premium. Todos os direitos reservados.
+              © 2025 BiOptimizers USA, Inc. Todos os direitos reservados.
             </p>
             <p className="text-slate-400">
-              🏆 FDA Aprovado • GMP Certificado • Testado por Terceiros
+              Patente dos EUA nº: 5.895.758
+            </p>
+          </div>
+
+          <div className="space-y-3 text-xs text-slate-400">
+            <p>
+              <strong>Isenção de responsabilidade legal da FTC:</strong> Os resultados descritos não são típicos 
+              e variam com base em uma variedade de fatores.
+            </p>
+            <p>
+              Estas declarações não foram avaliadas pela Food and Drug Administration. Este produto não se 
+              destina a diagnosticar, tratar, curar ou prevenir qualquer doença.
+            </p>
+            <p>
+              <strong>Aviso:</strong> Nosso produto não deve ser usado por crianças menores de 18 anos, 
+              nem por mulheres grávidas ou amamentando. Consulte sempre um médico antes de tomar qualquer suplemento.
             </p>
           </div>
         </div>
