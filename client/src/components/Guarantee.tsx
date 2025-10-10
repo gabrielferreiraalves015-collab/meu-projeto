@@ -12,30 +12,48 @@ export function Guarantee() {
 
           <div className="space-y-4">
             <h2 className="text-3xl md:text-4xl font-semibold">
-              Garantia de 100 Dias de Satisfação Total
+              Garantia Incondicional de 365 Dias
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Experimente nosso Magnésio Premium sem risco. Se não sentir os benefícios 
-              em até 100 dias, devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia.
+              Experimente Magnesium Breakthrough completamente sem risco por um ano inteiro.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 pt-6">
-            <div className="space-y-2">
-              <CheckCircle2 className="h-6 w-6 text-primary mx-auto" />
-              <div className="font-semibold">100 Dias</div>
-              <div className="text-sm text-muted-foreground">Para testar</div>
+          <div className="space-y-6 pt-6 max-w-3xl mx-auto text-left">
+            <div className="space-y-3">
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="h-6 w-6 text-primary mt-0.5 flex-shrink-0" />
+                <div>
+                  <div className="font-semibold mb-1">Compra de 1 Frasco:</div>
+                  <p className="text-sm text-muted-foreground">
+                    Se você comprar 1 frasco e não ficar completamente satisfeito, dentro de 365 dias 
+                    você poderá solicitar um reembolso total (menos custos de envio e manuseio).
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="space-y-2">
-              <CheckCircle2 className="h-6 w-6 text-primary mx-auto" />
-              <div className="font-semibold">Devolução Total</div>
-              <div className="text-sm text-muted-foreground">Reembolso completo</div>
+
+            <div className="space-y-3">
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="h-6 w-6 text-primary mt-0.5 flex-shrink-0" />
+                <div>
+                  <div className="font-semibold mb-1">Compra de Múltiplos Frascos:</div>
+                  <p className="text-sm text-muted-foreground">
+                    Se você optar por economizar e comprar um pacote com vários frascos, ainda terá a 
+                    garantia de 365 dias. Se não ficar satisfeito após o primeiro frasco, você pode devolver 
+                    os frascos restantes, ainda fechados, em até 365 dias após a compra, e nós reembolsaremos 
+                    o valor integral do seu pedido (menos os custos de envio e manuseio).
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="space-y-2">
-              <CheckCircle2 className="h-6 w-6 text-primary mx-auto" />
-              <div className="font-semibold">Sem Burocracia</div>
-              <div className="text-sm text-muted-foreground">Processo simples</div>
-            </div>
+
+            <Card className="p-4 bg-muted/50 border-muted">
+              <p className="text-xs text-muted-foreground">
+                *Observação: Se você abrir uma segunda garrafa, não terá mais direito à garantia acima. 
+                Fale com nossa equipe para um reembolso proporcional.
+              </p>
+            </Card>
           </div>
         </Card>
       </div>
