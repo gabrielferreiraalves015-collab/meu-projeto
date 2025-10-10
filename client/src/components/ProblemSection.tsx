@@ -4,18 +4,18 @@ import { Card } from "@/components/ui/card";
 const problems = [
   {
     icon: Moon,
-    title: "Noites Sem Descanso",
-    description: "Dificuldade para dormir e insônia crônica afetando sua qualidade de vida"
+    title: "Deficiência Metabólica",
+    description: "Sem magnésio suficiente, seu corpo não consegue funcionar de forma ideal, deteriorando a função metabólica"
   },
   {
     icon: Frown,
-    title: "Estresse Constante",
-    description: "Ansiedade e tensão muscular deixando você esgotado mentalmente"
+    title: "Risco Cardiovascular",
+    description: "Baixa proporção de magnésio para cálcio nas células é o marcador cardiovascular mais crítico"
   },
   {
     icon: Zap,
-    title: "Falta de Energia",
-    description: "Cansaço persistente e fadiga que impedem você de aproveitar o dia"
+    title: "Estresse e Fadiga Crônica",
+    description: "A deficiência de magnésio está diretamente ligada ao estresse, ansiedade e exaustão constante"
   }
 ];
 
@@ -25,10 +25,11 @@ export function ProblemSection() {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
           <h2 className="text-3xl md:text-5xl font-semibold">
-            Você Está Cansado de Sofrer com Esses Problemas?
+            A Deficiência de Magnésio Está Sabotando Sua Saúde?
           </h2>
           <p className="text-lg text-slate-300">
-            A deficiência de magnésio afeta milhões de pessoas, causando problemas sérios de saúde
+            "Se você não tem magnésio suficiente, seu corpo simplesmente não consegue funcionar de forma ideal... 
+            preparando o cenário para a deterioração da função metabólica." - Dr. Joseph Mercola, MD
           </p>
         </div>
 
