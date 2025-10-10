@@ -2,6 +2,7 @@ import { Hero } from "@/components/Hero";
 import { ProblemSection } from "@/components/ProblemSection";
 import { MagnesiumForms } from "@/components/MagnesiumForms";
 import { ProductInfo } from "@/components/ProductInfo";
+import { BlOtribe } from "@/components/BlOtribe";
 import { Pricing } from "@/components/Pricing";
 import { Guarantee } from "@/components/Guarantee";
 import { Testimonial } from "@/components/Testimonial";
@@ -21,6 +22,7 @@ export default function Index() {
       <ProblemSection />
       <MagnesiumForms />
       <ProductInfo />
+      <BlOtribe />
       <Pricing />
       <Guarantee />
       <Testimonial />
