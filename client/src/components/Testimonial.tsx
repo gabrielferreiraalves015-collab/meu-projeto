@@ -7,25 +7,25 @@ import testimonial3 from "@assets/stock_images/professional_headsho_ea7127d3.jpg
 
 const testimonials = [
   {
-    name: "Ana Silva",
-    role: "Executiva",
+    name: "Paul Chek",
+    role: "Fundador do Instituto CHEK",
     image: testimonial1,
     rating: 5,
-    text: "Finalmente consigo dormir bem! Após 2 semanas usando o Magnésio Premium, minha insônia desapareceu. Acordo descansada e com mais energia para o dia."
+    text: "Os produtos BiOptimizers são genuinamente eficazes. Eu pessoalmente os uso e recomendo para meus clientes que buscam otimização de saúde de alto nível."
   },
   {
-    name: "Carlos Mendes",
-    role: "Atleta",
+    name: "Dr. Joseph Mercola",
+    role: "MD, Especialista em Saúde Natural",
     image: testimonial2,
     rating: 5,
-    text: "Redução incrível nas câimbras musculares. Como atleta, isso fez toda diferença no meu desempenho. Altamente recomendado!"
+    text: "Se você não tem magnésio suficiente, seu corpo simplesmente não consegue funcionar de forma ideal... preparando o cenário para a deterioração da função metabólica."
   },
   {
-    name: "Maria Santos",
-    role: "Professora",
+    name: "Andrea Rosanoff",
+    role: "Ph.D. em Nutrição",
     image: testimonial3,
     rating: 5,
-    text: "Minha ansiedade diminuiu significativamente. Sinto-me mais calma e focada no trabalho. Produto de qualidade excepcional!"
+    text: "O marcador cardiovascular mais importante é uma baixa proporção de magnésio para cálcio nas células. Magnesium Breakthrough aborda isso de forma abrangente."
   }
 ];
 
@@ -35,10 +35,10 @@ export function Testimonial() {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
           <h2 className="text-3xl md:text-5xl font-semibold">
-            Veja o Que Nossos Clientes Dizem
+            Endossado por Especialistas de Classe Mundial
           </h2>
           <p className="text-lg text-muted-foreground">
-            Milhares de pessoas já transformaram sua saúde com nosso Magnésio Premium
+            Profissionais de saúde líderes confiam e recomendam Magnesium Breakthrough
           </p>
         </div>
 
