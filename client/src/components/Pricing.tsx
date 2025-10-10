@@ -5,45 +5,51 @@ import { CheckCircle2 } from "lucide-react";
 
 const plans = [
   {
-    name: "Starter",
-    description: "Experimente os benefícios",
-    price: "R$ 97",
-    period: "/mês",
+    name: "Pacote Experimental",
+    description: "Para conhecer o produto",
+    price: "$49",
+    period: "",
+    originalPrice: null,
     savings: null,
     features: [
       "1 Frasco (30 dias)",
-      "Frete grátis",
-      "Garantia 100 dias",
-      "Suporte por email"
+      "90 cápsulas veganas",
+      "Acesso BlOtribe",
+      "Garantia 365 dias",
+      "Suporte profissional"
     ]
   },
   {
-    name: "Melhor Valor",
-    description: "Plano mais popular",
-    price: "R$ 67",
-    period: "/mês",
-    savings: "Economize 31%",
+    name: "Pacote Ideal Para Casais",
+    description: "Mais popular",
+    price: "$127",
+    period: "",
+    originalPrice: "$147",
+    savings: "Economize $20",
     featured: true,
     features: [
       "3 Frascos (90 dias)",
-      "Frete grátis prioritário",
-      "Garantia 100 dias",
+      "Frete GRÁTIS",
+      "Acesso BlOtribe",
+      "Garantia 365 dias",
       "Suporte prioritário",
-      "Bônus: Guia de Bem-Estar"
+      "Aproximadamente $1,40/dia"
     ]
   },
   {
-    name: "Transformação",
-    description: "Resultados duradouros",
-    price: "R$ 57",
-    period: "/mês",
-    savings: "Economize 41%",
+    name: "Melhor Custo-Benefício",
+    description: "Máxima economia",
+    price: "$234",
+    period: "",
+    originalPrice: "$294",
+    savings: "Economize $60",
     features: [
       "6 Frascos (6 meses)",
-      "Frete grátis express",
-      "Garantia 100 dias",
+      "Frete GRÁTIS",
+      "Acesso BlOtribe",
+      "Garantia 365 dias",
       "Suporte VIP 24/7",
-      "Bônus: Kit Completo"
+      "Aproximadamente $1,30/dia"
     ]
   }
 ];
@@ -54,11 +60,16 @@ export function Pricing() {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
           <h2 className="text-3xl md:text-5xl font-semibold">
-            Escolha Seu Plano de Transformação
+            Invista na Sua Saúde Hoje
           </h2>
           <p className="text-lg text-muted-foreground">
-            Invista na sua saúde com garantia total de satisfação
+            Escolha o pacote ideal para você. Todos com garantia incondicional de 365 dias.
           </p>
+          <div className="pt-4">
+            <Badge variant="outline" className="text-primary border-primary">
+              🔬 Autoridade e Experiência: Otimizando Humanos Desde 2004
+            </Badge>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
@@ -92,10 +103,17 @@ export function Pricing() {
               </div>
 
               <div className="text-center">
+                {plan.originalPrice && (
+                  <div className="text-lg text-muted-foreground line-through">
+                    {plan.originalPrice}
+                  </div>
+                )}
                 <div className="text-4xl font-bold" data-testid={`text-price-${index}`}>
                   {plan.price}
                 </div>
-                <div className="text-muted-foreground">{plan.period}</div>
+                {plan.period && (
+                  <div className="text-muted-foreground">{plan.period}</div>
+                )}
               </div>
 
               <ul className="space-y-3">
@@ -117,7 +135,7 @@ export function Pricing() {
                 size="lg"
                 data-testid={`button-select-plan-${index}`}
               >
-                Começar Agora
+                👉 Selecionar Este Pacote
               </Button>
             </Card>
           ))}
