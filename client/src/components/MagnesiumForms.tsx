@@ -82,16 +82,16 @@ export function MagnesiumForms() {
               className="p-6 space-y-4 hover-elevate border-primary/20"
               data-testid={`card-form-${index}`}
             >
-              <div>
+              <div className="text-center">
                 <h3 className="font-semibold text-lg mb-3" data-testid={`text-form-name-${index}`}>
                   {form.name}
                 </h3>
               </div>
 
-              <ul className="space-y-2">
+              <ul className="space-y-2 text-center">
                 {form.benefits.map((benefit, bIndex) => (
-                  <li key={bIndex} className="flex items-start gap-2 text-sm">
-                    <CheckCircle2 className="h-4 w-4 mt-0.5 flex-shrink-0 text-primary" />
+                  <li key={bIndex} className="flex items-center justify-center gap-2 text-sm">
+                    <CheckCircle2 className="h-4 w-4 flex-shrink-0 text-primary" />
                     <span>{benefit}</span>
                   </li>
                 ))}

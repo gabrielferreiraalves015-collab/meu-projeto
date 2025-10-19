@@ -55,7 +55,7 @@ export function BlOtribe() {
               return (
                 <Card 
                   key={index}
-                  className="p-6 space-y-3 hover-elevate"
+                  className="p-6 space-y-3 hover-elevate text-center flex flex-col items-center"
                   data-testid={`card-blotribe-${index}`}
                 >
                   <div className="h-12 w-12 rounded-md bg-primary/10 flex items-center justify-center">
