@@ -98,10 +98,10 @@ export function Pricing() {
             >
               {/* Badge no topo centralizado */}
               {plan.badge && (
-                <div className="flex justify-center -mt-6 -mx-6 mb-2">
-                  <div className={`${plan.badgeColor} px-6 py-2 font-semibold text-sm tracking-wide rounded-t-md w-full text-center`}>
+                <div className="flex justify-center -mt-3 mb-3">
+                  <Badge className={`${plan.badgeColor} px-4 py-1 font-semibold text-xs tracking-wide`}>
                     {plan.badge}
-                  </div>
+                  </Badge>
                 </div>
               )}
 
