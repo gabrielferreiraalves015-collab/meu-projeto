@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle2 } from "lucide-react";
 import productImage from "@assets/magnesium-bottle.png";
+import paymentLogos from "@assets/payment-logos.png";
 
 const plans = [
   {
@@ -90,8 +91,8 @@ export function Pricing() {
           {plans.map((plan, index) => (
             <Card 
               key={index}
-              className={`p-6 space-y-4 relative hover-elevate flex flex-col border-2 ${
-                plan.featured ? 'border-primary border-[3px]' : 'border-border'
+              className={`p-6 space-y-4 relative hover-elevate flex flex-col ${
+                plan.featured ? 'border-[4px] border-primary' : 'border-2 border-border'
               }`}
               data-testid={`card-pricing-${index}`}
             >
@@ -176,12 +177,17 @@ export function Pricing() {
               >
                 SUBSCRIBE
               </Button>
+
+              {/* Logos de pagamento */}
+              <div className="flex justify-center pt-2">
+                <img
+                  src={paymentLogos}
+                  alt="Formas de pagamento aceitas"
+                  className="h-8 object-contain"
+                />
+              </div>
             </Card>
           ))}
-        </div>
-
-        <div className="text-center mt-8 text-sm text-muted-foreground">
-          💳 Aceitamos Visa, Mastercard, PIX e PayPal
         </div>
       </div>
     </div>
