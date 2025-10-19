@@ -24,10 +24,10 @@ export function Hero() {
             <div className="flex flex-col gap-4">
               <Button 
                 size="lg" 
-                className="bg-chart-2 hover:bg-chart-2 text-white border-chart-2 text-base"
+                className="bg-chart-2 hover:bg-chart-2 text-white border-chart-2 text-base w-full"
                 data-testid="button-hero-cta"
               >
-                👉 SIM, QUERO MEU MAGNESIUM BREAKTHROUGH AGORA!
+                QUERO MEU MAGNESIUM AGORA! 👉
               </Button>
               <div className="flex items-center justify-center gap-4 text-sm">
                 <div className="flex items-center gap-2">

@@ -22,7 +22,7 @@ export function FinalCTA() {
               className="bg-chart-2 hover:bg-chart-2 text-white border-chart-2 text-base px-8"
               data-testid="button-final-cta"
             >
-              👉 SIM, QUERO MEU MAGNESIUM BREAKTHROUGH AGORA!
+              GARANTIR MINHA OFERTA AGORA! 👉
             </Button>
             <div className="flex items-center gap-2 text-white/90">
               <Clock className="h-5 w-5" />
