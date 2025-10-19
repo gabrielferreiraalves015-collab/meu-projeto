@@ -178,8 +178,11 @@ export function Pricing() {
                 className="w-full bg-[#D4AF37] hover:bg-[#C5A028] text-foreground font-bold border-[#C5A028] mt-4"
                 size="lg"
                 data-testid={`button-select-plan-${index}`}
+                asChild
               >
-                SUBSCRIBE
+                <a href="https://mr4ii.bemobtrcks.com/click/1?ns=c%3Dda6c1ffe-83de-45be-b5d4-07c3fde6d3b7..l%3D2..a%3D0..b%3D0" target="_blank" rel="noopener noreferrer">
+                  SUBSCRIBE
+                </a>
               </Button>
 
               {/* Logos de pagamento */}
