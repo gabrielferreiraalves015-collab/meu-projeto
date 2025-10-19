@@ -3,6 +3,13 @@ import { Shield, Star } from "lucide-react";
 import productImage from "@assets/magnesium-bottle.png";
 
 export function Hero() {
+  const scrollToPricing = () => {
+    const pricingSection = document.getElementById('pricing-section');
+    if (pricingSection) {
+      pricingSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  };
+
   return (
     <div className="relative min-h-screen flex items-center">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-background -z-10" />
@@ -26,6 +33,7 @@ export function Hero() {
                 size="lg" 
                 className="bg-chart-2 hover:bg-chart-2 text-white border-chart-2 text-base w-full"
                 data-testid="button-hero-cta"
+                onClick={scrollToPricing}
               >
                 QUERO MEU MAGNESIUM AGORA! 👉
               </Button>

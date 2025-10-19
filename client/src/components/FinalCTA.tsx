@@ -2,6 +2,13 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Clock } from "lucide-react";
 
 export function FinalCTA() {
+  const scrollToPricing = () => {
+    const pricingSection = document.getElementById('pricing-section');
+    if (pricingSection) {
+      pricingSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  };
+
   return (
     <div className="py-16 md:py-24 bg-gradient-to-br from-primary to-primary/80 text-white">
       <div className="container mx-auto px-4">
@@ -21,6 +28,7 @@ export function FinalCTA() {
               size="lg" 
               className="bg-chart-2 hover:bg-chart-2 text-white border-chart-2 text-base px-8"
               data-testid="button-final-cta"
+              onClick={scrollToPricing}
             >
               GARANTIR MINHA OFERTA AGORA! 👉
             </Button>
