@@ -19,10 +19,10 @@ const plans = [
     freeShipping: "UPGRADE FOR FREE SHIPPING (US)",
     bottles: 1,
     features: [
-      "1 Frasco (30 dias)",
-      "90 cápsulas veganas",
-      "7 formas de magnésio",
-      "Garantia 365 dias"
+      "1 Bottle (30 days)",
+      "90 vegan capsules",
+      "7 forms of magnesium",
+      "365-day guarantee"
     ]
   },
   {
@@ -39,11 +39,11 @@ const plans = [
     featured: true,
     bottles: 5,
     features: [
-      "5 Frascos (5 meses)",
-      "Frete GRÁTIS",
-      "Máxima economia",
-      "Garantia 365 dias",
-      "Suporte prioritário"
+      "5 Bottles (5 months)",
+      "FREE Shipping",
+      "Maximum savings",
+      "365-day guarantee",
+      "Priority support"
     ]
   },
   {
@@ -60,11 +60,11 @@ const plans = [
     popular: true,
     bottles: 3,
     features: [
-      "3 Frascos (90 dias)",
-      "Frete GRÁTIS",
-      "Ideal para casais",
-      "Garantia 365 dias",
-      "Suporte profissional"
+      "3 Bottles (90 days)",
+      "FREE Shipping",
+      "Ideal for couples",
+      "365-day guarantee",
+      "Professional support"
     ]
   }
 ];
@@ -75,14 +75,14 @@ export function Pricing() {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
           <h2 className="text-3xl md:text-5xl font-semibold">
-            Invista na Sua Saúde Hoje
+            Invest in Your Health Today
           </h2>
           <p className="text-lg text-muted-foreground">
-            Escolha o pacote ideal para você. Todos com garantia incondicional de 365 dias.
+            Choose the ideal package for you. All with unconditional 365-day guarantee.
           </p>
           <div className="pt-4 flex justify-center">
             <Badge variant="outline" className="text-primary border-primary">
-              🔬 Autoridade e Experiência: Otimizando Humanos Desde 2004
+              🔬 Authority and Expertise: Optimizing Humans Since 2004
             </Badge>
           </div>
         </div>
@@ -96,7 +96,7 @@ export function Pricing() {
               }`}
               data-testid={`card-pricing-${index}`}
             >
-              {/* Badge no topo centralizado */}
+              {/* Top centered badge */}
               {plan.badge && (
                 <div className="flex justify-center -mt-3 mb-3">
                   <Badge className={`${plan.badgeColor} px-4 py-1 font-semibold text-xs tracking-wide`}>
@@ -105,9 +105,9 @@ export function Pricing() {
                 </div>
               )}
 
-              {/* Conteúdo centralizado */}
+              {/* Centered content */}
               <div className="flex flex-col items-center text-center space-y-4 flex-1">
-                {/* Título */}
+                {/* Title */}
                 <div>
                   <h3 className="text-xl font-bold" data-testid={`text-plan-name-${index}`}>
                     {plan.name}
@@ -115,7 +115,7 @@ export function Pricing() {
                   <p className="text-sm text-muted-foreground">{plan.subtitle}</p>
                 </div>
 
-                {/* Imagens do produto - múltiplos potes */}
+                {/* Product images - multiple bottles */}
                 <div className="flex items-center justify-center gap-2 h-40 py-2">
                   {[...Array(plan.bottles)].map((_, i) => (
                     <img
@@ -131,7 +131,7 @@ export function Pricing() {
                   ))}
                 </div>
 
-                {/* Preço */}
+                {/* Price */}
                 <div className="space-y-1 py-2">
                   <div className="flex items-baseline justify-center gap-1">
                     <span className="text-4xl font-bold text-primary" data-testid={`text-price-${index}`}>
@@ -144,12 +144,12 @@ export function Pricing() {
                   </div>
                 </div>
 
-                {/* Badge de economia */}
+                {/* Savings badge */}
                 <div className="text-sm font-bold text-destructive py-1">
                   {plan.savePercent}
                 </div>
 
-                {/* Oferta de assinatura */}
+                {/* Subscription offer */}
                 <div className="text-sm font-medium text-destructive underline">
                   {plan.subscribeOffer}
                 </div>
@@ -159,10 +159,10 @@ export function Pricing() {
                   {plan.freeShipping}
                 </div>
 
-                {/* Separador */}
+                {/* Separator */}
                 <div className="w-full border-t border-border my-2"></div>
 
-                {/* Features organizadas */}
+                {/* Organized features */}
                 <div className="space-y-2.5 w-full flex flex-col items-center">
                   {plan.features.map((feature, fIndex) => (
                     <div key={fIndex} className="flex items-center gap-2.5 text-sm">
@@ -173,7 +173,7 @@ export function Pricing() {
                 </div>
               </div>
 
-              {/* Botão amarelo */}
+              {/* Yellow button */}
               <Button 
                 className="w-full bg-[#D4AF37] hover:bg-[#C5A028] text-foreground font-bold border-[#C5A028] mt-4"
                 size="lg"
@@ -185,11 +185,11 @@ export function Pricing() {
                 </a>
               </Button>
 
-              {/* Logos de pagamento */}
+              {/* Payment logos */}
               <div className="flex justify-center pt-2">
                 <img
                   src={paymentLogos}
-                  alt="Formas de pagamento aceitas"
+                  alt="Accepted payment methods"
                   className="w-full max-w-[280px] h-auto object-contain"
                 />
               </div>

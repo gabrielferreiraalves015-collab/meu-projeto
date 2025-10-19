@@ -5,28 +5,28 @@ import { Users, GraduationCap, Heart, Video, Gift, Sparkles } from "lucide-react
 const benefits = [
   {
     icon: Users,
-    title: "Interação com Especialistas",
-    description: "Aproveite interações com Matt Gallant, Wade Lightheart, Mr. Noots e outros influenciadores de saúde de ponta"
+    title: "Expert Interaction",
+    description: "Enjoy interactions with Matt Gallant, Wade Lightheart, Mr. Noots, and other top health influencers"
   },
   {
     icon: GraduationCap,
-    title: "Aprendizado Gratuito",
-    description: "Aprenda com os maiores especialistas em saúde da área GRATUITAMENTE. Muitos cobram milhares de dólares por hora"
+    title: "Free Learning",
+    description: "Learn from the industry's top health experts FREE. Many charge thousands of dollars per hour"
   },
   {
     icon: Heart,
-    title: "Comunidade Motivada",
-    description: "Motive-se cercando-se de pessoas motivadas e com ideias semelhantes"
+    title: "Motivated Community",
+    description: "Get motivated by surrounding yourself with motivated, like-minded people"
   },
   {
     icon: Video,
-    title: "Conteúdo Exclusivo",
-    description: "Mergulhos profundos em vários tópicos e perguntas e respostas ao vivo TODA SEMANA"
+    title: "Exclusive Content",
+    description: "Deep dives into various topics and live Q&A EVERY WEEK"
   },
   {
     icon: Gift,
-    title: "Prêmios Mensais",
-    description: "Brindes mensais para os membros mais valiosos da comunidade"
+    title: "Monthly Prizes",
+    description: "Monthly giveaways for the community's most valuable members"
   }
 ];
 
@@ -38,14 +38,14 @@ export function BlOtribe() {
           <div className="text-center mb-12 space-y-4">
             <Badge className="bg-chart-2 hover:bg-chart-2 text-white text-sm px-4 py-1">
               <Sparkles className="h-4 w-4 mr-2 inline" />
-              BÔNUS GRATUITO E EXCLUSIVO
+              FREE AND EXCLUSIVE BONUS
             </Badge>
             <h2 className="text-3xl md:text-5xl font-semibold">
-              Acesso Imediato à Família BlOtribe
+              Immediate Access to the BlOtribe Family
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              A Comunidade de Saúde Mais Valiosa da Internet - 
-              <span className="font-semibold text-foreground"> Incluído GRATUITAMENTE</span> com sua compra
+              The Internet's Most Valuable Health Community - 
+              <span className="font-semibold text-foreground"> Included FREE</span> with your purchase
             </p>
           </div>
 
@@ -70,8 +70,8 @@ export function BlOtribe() {
 
           <Card className="mt-8 p-6 bg-primary/5 border-primary/20">
             <p className="text-center text-sm text-muted-foreground">
-              <strong className="text-foreground">Diferencial Importante:</strong> Existem grupos de saúde que cobram 
-              centenas de dólares por ano por comunidades menos valiosas. Este é um presente sem compromisso para você.
+              <strong className="text-foreground">Important Note:</strong> There are health groups that charge 
+              hundreds of dollars per year for less valuable communities. This is a no-strings-attached gift to you.
             </p>
           </Card>
         </div>

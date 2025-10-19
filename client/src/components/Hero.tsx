@@ -19,12 +19,12 @@ export function Hero() {
           <div className="space-y-8">
             <div className="space-y-4 text-center">
               <h1 className="text-3xl md:text-5xl font-bold leading-tight">
-                Magnesium Breakthrough: A Única Fórmula do Mundo com{" "}
-                <span className="text-primary">7 Formas de Magnésio</span>
+                Magnesium Breakthrough: The Only Formula in the World with{" "}
+                <span className="text-primary">7 Forms of Magnesium</span>
               </h1>
               <p className="text-base md:text-lg text-muted-foreground">
-                Para reverter a deficiência crônica, reduzir o estresse e acelerar seu metabolismo. 
-                Você viu a pesquisa. Funciona. Garantia de 365 dias ou seu dinheiro de volta.
+                To reverse chronic deficiency, reduce stress, and accelerate your metabolism. 
+                You've seen the research. It works. 365-day guarantee or your money back.
               </p>
             </div>
 
@@ -35,15 +35,15 @@ export function Hero() {
                 data-testid="button-hero-cta"
                 onClick={scrollToPricing}
               >
-                QUERO MEU MAGNESIUM AGORA! 👉
+                GET MY MAGNESIUM NOW! 👉
               </Button>
               <div className="flex items-center justify-center gap-4 text-sm">
                 <div className="flex items-center gap-2">
                   <Shield className="h-4 w-4 text-primary" />
-                  <span className="font-medium">PEDIDO 100% SEGURO</span>
+                  <span className="font-medium">100% SECURE ORDER</span>
                 </div>
                 <span className="text-muted-foreground">|</span>
-                <span className="text-muted-foreground">Formas de pagamento aceitas</span>
+                <span className="text-muted-foreground">Accepted payment methods</span>
               </div>
             </div>
 
@@ -54,8 +54,8 @@ export function Hero() {
                 ))}
               </div>
               <div className="text-sm">
-                <div className="font-semibold" data-testid="text-rating">4.9/5 de 12.000+ clientes</div>
-                <div className="text-muted-foreground">Avaliações verificadas</div>
+                <div className="font-semibold" data-testid="text-rating">4.9/5 from 12,000+ customers</div>
+                <div className="text-muted-foreground">Verified reviews</div>
               </div>
             </div>
           </div>
@@ -64,7 +64,7 @@ export function Hero() {
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-chart-2/20 blur-3xl -z-10" />
             <img
               src={productImage}
-              alt="Magnesium Breakthrough - Frasco com 90 cápsulas"
+              alt="Magnesium Breakthrough - Bottle with 90 capsules"
               className="w-auto h-[400px] md:h-[500px] object-contain"
               data-testid="img-hero-product"
             />

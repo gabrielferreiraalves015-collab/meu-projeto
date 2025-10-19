@@ -4,28 +4,28 @@ import { Card } from "@/components/ui/card";
 const badges = [
   {
     icon: BadgeCheck,
-    title: "FDA Aprovado",
-    description: "Certificação completa"
+    title: "FDA Approved",
+    description: "Full certification"
   },
   {
     icon: Award,
-    title: "GMP Certificado",
-    description: "Qualidade garantida"
+    title: "GMP Certified",
+    description: "Guaranteed quality"
   },
   {
     icon: Microscope,
-    title: "Testado por Terceiros",
-    description: "Pureza verificada"
+    title: "Third-Party Tested",
+    description: "Verified purity"
   },
   {
     icon: Shield,
-    title: "100 Dias de Garantia",
-    description: "Satisfação total"
+    title: "100-Day Guarantee",
+    description: "Total satisfaction"
   },
   {
     icon: Truck,
-    title: "Frete Grátis",
-    description: "Entrega rápida"
+    title: "Free Shipping",
+    description: "Fast delivery"
   }
 ];
 

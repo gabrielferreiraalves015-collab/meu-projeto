@@ -4,59 +4,59 @@ import { CheckCircle2 } from "lucide-react";
 
 const forms = [
   {
-    name: "Magnésio Glicinato",
+    name: "Magnesium Glycinate",
     benefits: [
-      "Reduz estresse",
-      "Melhora qualidade do sono",
-      "Alta absorção"
+      "Reduces stress",
+      "Improves sleep quality",
+      "High absorption"
     ]
   },
   {
-    name: "Magnésio Malato",
+    name: "Magnesium Malate",
     benefits: [
-      "Aumenta energia",
-      "Combate fadiga",
-      "Performance muscular"
+      "Increases energy",
+      "Fights fatigue",
+      "Muscle performance"
     ]
   },
   {
-    name: "Magnésio Citrato",
+    name: "Magnesium Citrate",
     benefits: [
-      "Regularidade intestinal",
-      "Digestão saudável",
-      "Boa biodisponibilidade"
+      "Intestinal regularity",
+      "Healthy digestion",
+      "Good bioavailability"
     ]
   },
   {
-    name: "Magnésio Bisglicinato",
+    name: "Magnesium Bisglycinate",
     benefits: [
-      "Máxima absorção",
-      "Suave para estômago",
-      "Alta biodisponibilidade"
+      "Maximum absorption",
+      "Gentle on stomach",
+      "High bioavailability"
     ]
   },
   {
-    name: "Magnésio Quelato",
+    name: "Magnesium Chelate",
     benefits: [
-      "Suporte muscular",
-      "Saúde nervosa",
-      "Absorção eficiente"
+      "Muscle support",
+      "Nervous health",
+      "Efficient absorption"
     ]
   },
   {
-    name: "Magnésio Orotato",
+    name: "Magnesium Orotate",
     benefits: [
-      "Saúde cardiovascular",
-      "Performance atlética",
-      "Energia celular"
+      "Cardiovascular health",
+      "Athletic performance",
+      "Cellular energy"
     ]
   },
   {
-    name: "Magnésio Taurato",
+    name: "Magnesium Taurate",
     benefits: [
-      "Saúde do coração",
-      "Função cognitiva",
-      "Suporte neurológico"
+      "Heart health",
+      "Cognitive function",
+      "Neurological support"
     ]
   }
 ];
@@ -67,11 +67,11 @@ export function MagnesiumForms() {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
           <h2 className="text-3xl md:text-5xl font-semibold">
-            As 7 Formas Essenciais de Magnésio
+            The 7 Essential Forms of Magnesium
           </h2>
           <p className="text-lg text-muted-foreground">
-            Magnesium Breakthrough contém TODAS as 7 formas para atacar o problema de todas as frentes. 
-            A única fórmula completa do mundo.
+            Magnesium Breakthrough contains ALL 7 forms to attack the problem from all angles. 
+            The only complete formula in the world.
           </p>
         </div>
 

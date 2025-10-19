@@ -5,33 +5,33 @@ import productImage from "@assets/stock_images/supplement_bottle_pr_02a0f8ae.jpg
 const features = [
   {
     icon: CheckCircle2,
-    title: "Alta Biodisponibilidade",
-    description: "Glicinato de magnésio para máxima absorção"
+    title: "High Bioavailability",
+    description: "Magnesium glycinate for maximum absorption"
   },
   {
     icon: Leaf,
     title: "100% Natural",
-    description: "Ingredientes puros e orgânicos certificados"
+    description: "Pure and certified organic ingredients"
   },
   {
     icon: Droplet,
-    title: "Fácil Digestão",
-    description: "Suave para o estômago, sem efeitos colaterais"
+    title: "Easy Digestion",
+    description: "Gentle on the stomach, no side effects"
   },
   {
     icon: Shield,
-    title: "Testado em Laboratório",
-    description: "Pureza e potência verificadas por terceiros"
+    title: "Lab Tested",
+    description: "Third-party verified purity and potency"
   }
 ];
 
 const specs = [
-  { label: "Produto", value: "Magnesium Breakthrough Versão 4.0" },
-  { label: "Quantidade", value: "90 cápsulas veganas" },
-  { label: "Duração", value: "30 dias (dose: 3 cápsulas/dia)" },
-  { label: "Modo de Usar", value: "3 cápsulas ao dia, preferencialmente à noite" },
-  { label: "Isenções", value: "Sem glúten, soja, laticínios, OGM" },
-  { label: "Adequado para", value: "Vegetarianos e veganos" }
+  { label: "Product", value: "Magnesium Breakthrough Version 4.0" },
+  { label: "Quantity", value: "90 vegan capsules" },
+  { label: "Duration", value: "30 days (dose: 3 capsules/day)" },
+  { label: "How to Use", value: "3 capsules daily, preferably at night" },
+  { label: "Free From", value: "Gluten, soy, dairy, GMOs" },
+  { label: "Suitable for", value: "Vegetarians and vegans" }
 ];
 
 export function ProductInfo() {
@@ -49,16 +49,16 @@ export function ProductInfo() {
           </div>
 
           <div className="space-y-8">
-            <div>
+            <div className="text-center">
               <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-                Fórmula Científica Inigualável
+                Unmatched Scientific Formula
               </h2>
               <p className="text-lg text-muted-foreground">
-                7 formas de magnésio para absorção e eficácia máximas. Ao contrário dos suplementos comuns, 
-                Magnesium Breakthrough é projetado para resultados reais.
+                7 forms of magnesium for maximum absorption and effectiveness. Unlike common supplements, 
+                Magnesium Breakthrough is designed for real results.
               </p>
               <p className="text-sm text-muted-foreground mt-3 italic">
-                "Eu uso magnésio para qualquer pessoa que queira otimizar sua saúde cardiovascular." 
+                "I use magnesium for anyone looking to optimize their cardiovascular health." 
                 - Dr. Robert Maki, ND
               </p>
             </div>
@@ -80,8 +80,8 @@ export function ProductInfo() {
               })}
             </div>
 
-            <Card className="p-6">
-              <h3 className="font-semibold mb-4">Especificações do Produto</h3>
+            <Card className="p-6 max-w-xl mx-auto">
+              <h3 className="font-semibold mb-4 text-center">Product Specifications</h3>
               <div className="space-y-3">
                 {specs.map((spec, index) => (
                   <div 
