@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Shield, Star } from "lucide-react";
-import heroImage from "@assets/image_1760205283445.png";
+import productImage from "@assets/magnesium-bottle.png";
 
 export function Hero() {
   return (
@@ -52,12 +52,12 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative flex justify-center">
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-chart-2/20 blur-3xl -z-10" />
             <img
-              src={heroImage}
+              src={productImage}
               alt="Magnesium Breakthrough - Frasco com 90 cápsulas"
-              className="w-full h-auto rounded-lg"
+              className="w-auto h-[400px] md:h-[500px] object-contain"
               data-testid="img-hero-product"
             />
           </div>

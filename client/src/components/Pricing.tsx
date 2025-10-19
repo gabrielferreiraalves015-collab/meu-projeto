@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle2 } from "lucide-react";
+import productImage from "@assets/magnesium-bottle.png";
 
 const plans = [
   {
@@ -15,6 +16,7 @@ const plans = [
     savePercent: "SUBSCRIBE & SAVE 12%",
     subscribeOffer: "Subscribe N' Save 22% Off",
     freeShipping: "UPGRADE FOR FREE SHIPPING (US)",
+    bottles: 1,
     features: [
       "1 Frasco (30 dias)",
       "90 cápsulas veganas",
@@ -34,6 +36,7 @@ const plans = [
     subscribeOffer: "Subscribe N' Save 22% Off",
     freeShipping: "+ FREE SHIPPING (US)",
     featured: true,
+    bottles: 5,
     features: [
       "5 Frascos (5 meses)",
       "Frete GRÁTIS",
@@ -54,6 +57,7 @@ const plans = [
     subscribeOffer: "Subscribe N' Save 22% Off",
     freeShipping: "+ FREE SHIPPING (US)",
     popular: true,
+    bottles: 3,
     features: [
       "3 Frascos (90 dias)",
       "Frete GRÁTIS",
@@ -86,8 +90,8 @@ export function Pricing() {
           {plans.map((plan, index) => (
             <Card 
               key={index}
-              className={`p-6 space-y-4 relative hover-elevate flex flex-col ${
-                plan.featured ? 'border-primary border-2 shadow-xl' : ''
+              className={`p-6 space-y-4 relative hover-elevate flex flex-col border-2 ${
+                plan.featured ? 'border-primary border-[3px]' : 'border-border'
               }`}
               data-testid={`card-pricing-${index}`}
             >
@@ -107,9 +111,20 @@ export function Pricing() {
                   <p className="text-sm text-muted-foreground">{plan.subtitle}</p>
                 </div>
 
-                {/* Imagem do produto - placeholder */}
-                <div className="w-32 h-32 bg-muted/30 rounded-md flex items-center justify-center">
-                  <span className="text-xs text-muted-foreground">Produto</span>
+                {/* Imagens do produto - múltiplos potes */}
+                <div className="flex items-center justify-center gap-2 h-40">
+                  {[...Array(plan.bottles)].map((_, i) => (
+                    <img
+                      key={i}
+                      src={productImage}
+                      alt={`Magnesium Breakthrough bottle ${i + 1}`}
+                      className={`object-contain ${
+                        plan.bottles === 1 ? 'h-40' : 
+                        plan.bottles === 3 ? 'h-32' : 
+                        'h-28'
+                      }`}
+                    />
+                  ))}
                 </div>
 
                 {/* Preço */}
@@ -132,7 +147,6 @@ export function Pricing() {
 
                 {/* Oferta de assinatura */}
                 <div className="flex items-center gap-2">
-                  <img src="/api/placeholder/20/20" alt="Subscribe" className="w-5 h-5" />
                   <span className="text-sm font-medium text-destructive underline">
                     {plan.subscribeOffer}
                   </span>
@@ -154,14 +168,9 @@ export function Pricing() {
                 </ul>
               </div>
 
-              {/* Botão */}
+              {/* Botão amarelo */}
               <Button 
-                className={`w-full ${
-                  plan.featured || plan.popular
-                    ? 'bg-[#0891b2] hover:bg-[#0891b2]/90 text-white' 
-                    : ''
-                }`}
-                variant={plan.featured || plan.popular ? 'default' : 'default'}
+                className="w-full bg-[#D4AF37] hover:bg-[#C5A028] text-foreground font-bold border-[#C5A028]"
                 size="lg"
                 data-testid={`button-select-plan-${index}`}
               >
