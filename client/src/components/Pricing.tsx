@@ -163,9 +163,9 @@ export function Pricing() {
                 <div className="w-full border-t border-border my-2"></div>
 
                 {/* Features organizadas */}
-                <div className="space-y-2.5 w-full px-2">
+                <div className="space-y-2.5 w-full flex flex-col items-center">
                   {plan.features.map((feature, fIndex) => (
-                    <div key={fIndex} className="flex items-center justify-center gap-2.5 text-sm">
+                    <div key={fIndex} className="flex items-center gap-2.5 text-sm">
                       <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0" />
                       <span>{feature}</span>
                     </div>
