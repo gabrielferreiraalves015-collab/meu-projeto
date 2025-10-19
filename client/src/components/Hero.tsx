@@ -10,12 +10,12 @@ export function Hero() {
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <div className="space-y-4">
-              <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+            <div className="space-y-4 text-center">
+              <h1 className="text-3xl md:text-5xl font-bold leading-tight">
                 Magnesium Breakthrough: A Única Fórmula do Mundo com{" "}
                 <span className="text-primary">7 Formas de Magnésio</span>
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground">
+              <p className="text-base md:text-lg text-muted-foreground">
                 Para reverter a deficiência crônica, reduzir o estresse e acelerar seu metabolismo. 
                 Você viu a pesquisa. Funciona. Garantia de 365 dias ou seu dinheiro de volta.
               </p>

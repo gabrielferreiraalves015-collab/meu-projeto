@@ -79,7 +79,7 @@ export function Pricing() {
           <p className="text-lg text-muted-foreground">
             Escolha o pacote ideal para você. Todos com garantia incondicional de 365 dias.
           </p>
-          <div className="pt-4">
+          <div className="pt-4 flex justify-center">
             <Badge variant="outline" className="text-primary border-primary">
               🔬 Autoridade e Experiência: Otimizando Humanos Desde 2004
             </Badge>
