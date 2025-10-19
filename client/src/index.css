@@ -364,4 +364,98 @@
   .border.hover-elevate:not(.no-hover-interaction-elevate)::after {
     inset: -1px;
   }
+
+  /* CORREÇÕES DE ALINHAMENTO E CENTRALIZAÇÃO */
+  .hero-section,
+  .text-container,
+  .content-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-section h1,
+  .hero-section h2,
+  .hero-section h3,
+  .hero-section h4,
+  .hero-section h5,
+  .hero-section h6,
+  .hero-section p,
+  .text-container h1,
+  .text-container h2,
+  .text-container h3,
+  .text-container h4,
+  .text-container h5,
+  .text-container h6,
+  .text-container p,
+  .content-wrapper h1,
+  .content-wrapper h2,
+  .content-wrapper h3,
+  .content-wrapper h4,
+  .content-wrapper h5,
+  .content-wrapper h6,
+  .content-wrapper p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+  }
+
+  .button-container,
+  .cta-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .btn,
+  .cta-button {
+    width: 100%;
+    max-width: 300px;
+    margin: 5px auto;
+    display: block;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  /* Garantir centralização em mobile */
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+
+    .hero-section h1,
+    .text-container h1,
+    .content-wrapper h1 {
+      font-size: 2rem !important;
+    }
+
+    .hero-section h2,
+    .text-container h2,
+    .content-wrapper h2 {
+      font-size: 1.5rem !important;
+    }
+
+    .hero-section h3,
+    .text-container h3,
+    .content-wrapper h3 {
+      font-size: 1.3rem !important;
+    }
+
+    .btn,
+    .cta-button {
+      max-width: 100%;
+    }
+  }
 }
