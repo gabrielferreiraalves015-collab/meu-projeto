@@ -179,11 +179,11 @@ export function Pricing() {
               </Button>
 
               {/* Logos de pagamento */}
-              <div className="flex justify-center pt-2">
+              <div className="flex justify-center pt-3">
                 <img
                   src={paymentLogos}
                   alt="Formas de pagamento aceitas"
-                  className="h-8 object-contain"
+                  className="w-full max-w-[280px] h-auto object-contain"
                 />
               </div>
             </Card>
