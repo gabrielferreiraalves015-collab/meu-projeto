@@ -91,20 +91,23 @@ export function Pricing() {
           {plans.map((plan, index) => (
             <Card 
               key={index}
-              className={`p-6 space-y-4 relative hover-elevate flex flex-col ${
+              className={`p-6 space-y-5 relative hover-elevate flex flex-col ${
                 plan.featured ? 'border-[4px] border-primary' : 'border-2 border-border'
               }`}
               data-testid={`card-pricing-${index}`}
             >
-              {/* Badge no topo */}
+              {/* Badge no topo centralizado */}
               {plan.badge && (
-                <div className={`${plan.badgeColor} text-center py-2 -mx-6 -mt-6 mb-2 font-semibold text-sm tracking-wide`}>
-                  {plan.badge}
+                <div className="flex justify-center -mt-6 -mx-6 mb-2">
+                  <div className={`${plan.badgeColor} px-6 py-2 font-semibold text-sm tracking-wide rounded-t-md w-full text-center`}>
+                    {plan.badge}
+                  </div>
                 </div>
               )}
 
               {/* Conteúdo centralizado */}
               <div className="flex flex-col items-center text-center space-y-4 flex-1">
+                {/* Título */}
                 <div>
                   <h3 className="text-xl font-bold" data-testid={`text-plan-name-${index}`}>
                     {plan.name}
@@ -113,7 +116,7 @@ export function Pricing() {
                 </div>
 
                 {/* Imagens do produto - múltiplos potes */}
-                <div className="flex items-center justify-center gap-2 h-40">
+                <div className="flex items-center justify-center gap-2 h-40 py-2">
                   {[...Array(plan.bottles)].map((_, i) => (
                     <img
                       key={i}
@@ -129,49 +132,50 @@ export function Pricing() {
                 </div>
 
                 {/* Preço */}
-                <div className="space-y-1">
+                <div className="space-y-1 py-2">
                   <div className="flex items-baseline justify-center gap-1">
                     <span className="text-4xl font-bold text-primary" data-testid={`text-price-${index}`}>
                       {plan.price}
                     </span>
                     <span className="text-lg text-muted-foreground">{plan.perBottle}</span>
                   </div>
-                  <div className="text-sm text-muted-foreground">
+                  <div className="text-sm text-muted-foreground font-medium">
                     {plan.totalPrice}
                   </div>
                 </div>
 
                 {/* Badge de economia */}
-                <div className="text-sm font-bold text-destructive">
+                <div className="text-sm font-bold text-destructive py-1">
                   {plan.savePercent}
                 </div>
 
                 {/* Oferta de assinatura */}
-                <div className="flex items-center gap-2">
-                  <span className="text-sm font-medium text-destructive underline">
-                    {plan.subscribeOffer}
-                  </span>
+                <div className="text-sm font-medium text-destructive underline">
+                  {plan.subscribeOffer}
                 </div>
 
                 {/* Free shipping */}
-                <div className="text-sm font-medium">
+                <div className="text-sm font-semibold text-foreground">
                   {plan.freeShipping}
                 </div>
 
-                {/* Features */}
-                <ul className="space-y-2 w-full">
+                {/* Separador */}
+                <div className="w-full border-t border-border my-2"></div>
+
+                {/* Features organizadas */}
+                <div className="space-y-2.5 w-full px-2">
                   {plan.features.map((feature, fIndex) => (
-                    <li key={fIndex} className="flex items-center justify-center gap-2 text-sm">
+                    <div key={fIndex} className="flex items-center gap-2.5 text-sm">
                       <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0" />
-                      <span>{feature}</span>
-                    </li>
+                      <span className="text-left flex-1">{feature}</span>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </div>
 
               {/* Botão amarelo */}
               <Button 
-                className="w-full bg-[#D4AF37] hover:bg-[#C5A028] text-foreground font-bold border-[#C5A028]"
+                className="w-full bg-[#D4AF37] hover:bg-[#C5A028] text-foreground font-bold border-[#C5A028] mt-4"
                 size="lg"
                 data-testid={`button-select-plan-${index}`}
               >
@@ -179,7 +183,7 @@ export function Pricing() {
               </Button>
 
               {/* Logos de pagamento */}
-              <div className="flex justify-center pt-3">
+              <div className="flex justify-center pt-2">
                 <img
                   src={paymentLogos}
                   alt="Formas de pagamento aceitas"
