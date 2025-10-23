@@ -12,10 +12,10 @@ export function Guarantee() {
 
           <div className="space-y-4">
             <h2 className="text-3xl md:text-4xl font-semibold">
-              Garantia Incondicional de 365 Dias
+              Unconditional 365-Day Guarantee
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Experimente Magnesium Breakthrough completamente sem risco por um ano inteiro.
+              Try Magnesium Breakthrough completely risk-free for an entire year.
             </p>
           </div>
 
@@ -24,10 +24,10 @@ export function Guarantee() {
               <div className="flex items-start gap-3">
                 <CheckCircle2 className="h-6 w-6 text-primary mt-0.5 flex-shrink-0" />
                 <div>
-                  <div className="font-semibold mb-1">Compra de 1 Frasco:</div>
+                  <div className="font-semibold mb-1">1 Bottle Purchase:</div>
                   <p className="text-sm text-muted-foreground">
-                    Se você comprar 1 frasco e não ficar completamente satisfeito, dentro de 365 dias 
-                    você poderá solicitar um reembolso total (menos custos de envio e manuseio).
+                    If you purchase 1 bottle and are not completely satisfied, within 365 days 
+                    you may request a full refund (minus shipping and handling costs).
                   </p>
                 </div>
               </div>
@@ -37,12 +37,12 @@ export function Guarantee() {
               <div className="flex items-start gap-3">
                 <CheckCircle2 className="h-6 w-6 text-primary mt-0.5 flex-shrink-0" />
                 <div>
-                  <div className="font-semibold mb-1">Compra de Múltiplos Frascos:</div>
+                  <div className="font-semibold mb-1">Multiple Bottle Purchase:</div>
                   <p className="text-sm text-muted-foreground">
-                    Se você optar por economizar e comprar um pacote com vários frascos, ainda terá a 
-                    garantia de 365 dias. Se não ficar satisfeito após o primeiro frasco, você pode devolver 
-                    os frascos restantes, ainda fechados, em até 365 dias após a compra, e nós reembolsaremos 
-                    o valor integral do seu pedido (menos os custos de envio e manuseio).
+                    If you choose to save and purchase a multi-bottle package, you still have the 
+                    365-day guarantee. If you're not satisfied after the first bottle, you can return 
+                    the remaining unopened bottles within 365 days of purchase, and we will refund 
+                    the full amount of your order (minus shipping and handling costs).
                   </p>
                 </div>
               </div>
@@ -50,8 +50,8 @@ export function Guarantee() {
 
             <Card className="p-4 bg-muted/50 border-muted">
               <p className="text-xs text-muted-foreground">
-                *Observação: Se você abrir uma segunda garrafa, não terá mais direito à garantia acima. 
-                Fale com nossa equipe para um reembolso proporcional.
+                *Note: If you open a second bottle, you will no longer be eligible for the above guarantee. 
+                Speak with our team for a prorated refund.
               </p>
             </Card>
           </div>

@@ -4,18 +4,18 @@ import { Card } from "@/components/ui/card";
 const problems = [
   {
     icon: Moon,
-    title: "Deficiência Metabólica",
-    description: "Sem magnésio suficiente, seu corpo não consegue funcionar de forma ideal, deteriorando a função metabólica"
+    title: "Metabolic Deficiency",
+    description: "Without enough magnesium, your body cannot function optimally, deteriorating metabolic function"
   },
   {
     icon: Frown,
-    title: "Risco Cardiovascular",
-    description: "Baixa proporção de magnésio para cálcio nas células é o marcador cardiovascular mais crítico"
+    title: "Cardiovascular Risk",
+    description: "Low magnesium to calcium ratio in cells is the most critical cardiovascular marker"
   },
   {
     icon: Zap,
-    title: "Estresse e Fadiga Crônica",
-    description: "A deficiência de magnésio está diretamente ligada ao estresse, ansiedade e exaustão constante"
+    title: "Chronic Stress and Fatigue",
+    description: "Magnesium deficiency is directly linked to stress, anxiety and constant exhaustion"
   }
 ];
 
@@ -25,11 +25,11 @@ export function ProblemSection() {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
           <h2 className="text-3xl md:text-5xl font-semibold">
-            A Deficiência de Magnésio Está Sabotando Sua Saúde?
+            Is Magnesium Deficiency Sabotaging Your Health?
           </h2>
           <p className="text-lg text-slate-300">
-            "Se você não tem magnésio suficiente, seu corpo simplesmente não consegue funcionar de forma ideal... 
-            preparando o cenário para a deterioração da função metabólica." - Dr. Joseph Mercola, MD
+            "If you don't have enough magnesium, your body simply cannot function optimally... 
+            setting the stage for deterioration of metabolic function." - Dr. Joseph Mercola, MD
           </p>
         </div>
 

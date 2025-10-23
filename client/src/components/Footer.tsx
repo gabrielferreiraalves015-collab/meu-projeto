@@ -2,26 +2,26 @@ import { Facebook, Instagram, Twitter, Mail } from "lucide-react";
 
 const footerLinks = {
   product: [
-    { label: "Benefícios", href: "#benefits" },
-    { label: "Ingredientes", href: "#ingredients" },
-    { label: "Como Usar", href: "#usage" },
+    { label: "Benefits", href: "#benefits" },
+    { label: "Ingredients", href: "#ingredients" },
+    { label: "How to Use", href: "#usage" },
     { label: "FAQ", href: "#faq" }
   ],
   company: [
-    { label: "Sobre Nós", href: "#about" },
+    { label: "About Us", href: "#about" },
     { label: "Blog", href: "#blog" },
-    { label: "Contato", href: "#contact" },
-    { label: "Carreiras", href: "#careers" }
+    { label: "Contact", href: "#contact" },
+    { label: "Careers", href: "#careers" }
   ],
   support: [
-    { label: "Central de Ajuda", href: "#help" },
-    { label: "Rastreamento", href: "#tracking" },
-    { label: "Devoluções", href: "#returns" },
-    { label: "Garantia", href: "#warranty" }
+    { label: "Help Center", href: "#help" },
+    { label: "Tracking", href: "#tracking" },
+    { label: "Returns", href: "#returns" },
+    { label: "Warranty", href: "#warranty" }
   ],
   legal: [
-    { label: "Privacidade", href: "#privacy" },
-    { label: "Termos de Uso", href: "#terms" },
+    { label: "Privacy", href: "#privacy" },
+    { label: "Terms of Use", href: "#terms" },
     { label: "Cookies", href: "#cookies" }
   ]
 };
@@ -39,9 +39,9 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-8">
           <div className="col-span-2 md:col-span-1">
-            <h3 className="text-xl font-bold text-white mb-4">Magnésio Premium</h3>
+            <h3 className="text-xl font-bold text-white mb-4">Premium Magnesium</h3>
             <p className="text-sm mb-4">
-              Transformando vidas através da saúde natural e bem-estar científico.
+              Transforming lives through natural health and scientific wellness.
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social, index) => {
@@ -62,7 +62,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-white mb-4">Produto</h4>
+            <h4 className="font-semibold text-white mb-4">Product</h4>
             <ul className="space-y-2">
               {footerLinks.product.map((link, index) => (
                 <li key={index}>
@@ -79,7 +79,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-white mb-4">Empresa</h4>
+            <h4 className="font-semibold text-white mb-4">Company</h4>
             <ul className="space-y-2">
               {footerLinks.company.map((link, index) => (
                 <li key={index}>
@@ -96,7 +96,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-white mb-4">Suporte</h4>
+            <h4 className="font-semibold text-white mb-4">Support</h4>
             <ul className="space-y-2">
               {footerLinks.support.map((link, index) => (
                 <li key={index}>
@@ -133,25 +133,25 @@ export function Footer() {
         <div className="border-t border-slate-800 pt-8 space-y-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
             <p data-testid="text-copyright">
-              © 2025 BiOptimizers USA, Inc. Todos os direitos reservados.
+              © 2025 BiOptimizers USA, Inc. All rights reserved.
             </p>
             <p className="text-slate-400">
-              Patente dos EUA nº: 5.895.758
+              US Patent No: 5.895.758
             </p>
           </div>
 
           <div className="space-y-3 text-xs text-slate-400">
             <p>
-              <strong>Isenção de responsabilidade legal da FTC:</strong> Os resultados descritos não são típicos 
-              e variam com base em uma variedade de fatores.
+              <strong>FTC Legal Disclaimer:</strong> The results described are not typical 
+              and vary based on a variety of factors.
             </p>
             <p>
-              Estas declarações não foram avaliadas pela Food and Drug Administration. Este produto não se 
-              destina a diagnosticar, tratar, curar ou prevenir qualquer doença.
+              These statements have not been evaluated by the Food and Drug Administration. This product is not 
+              intended to diagnose, treat, cure or prevent any disease.
             </p>
             <p>
-              <strong>Aviso:</strong> Nosso produto não deve ser usado por crianças menores de 18 anos, 
-              nem por mulheres grávidas ou amamentando. Consulte sempre um médico antes de tomar qualquer suplemento.
+              <strong>Warning:</strong> Our product should not be used by children under 18 years of age, 
+              nor by pregnant or nursing women. Always consult a physician before taking any supplement.
             </p>
           </div>
         </div>

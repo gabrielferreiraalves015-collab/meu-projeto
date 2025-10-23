@@ -15,11 +15,11 @@ export function FinalCTA() {
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <div className="space-y-4">
             <h2 className="text-3xl md:text-5xl font-semibold">
-              É Hora de Experimentar a Otimização Biológica
+              It's Time to Experience Biological Optimization
             </h2>
             <p className="text-lg text-white/90">
-              Nossa missão é acabar com o sofrimento físico, ajudando você a se tornar uma versão 
-              super-humana de si mesmo. Junte-se a milhares que já transformaram suas vidas.
+              Our mission is to end physical suffering by helping you become a 
+              superhuman version of yourself. Join thousands who have already transformed their lives.
             </p>
           </div>
 
@@ -30,16 +30,16 @@ export function FinalCTA() {
               data-testid="button-final-cta"
               onClick={scrollToPricing}
             >
-              GARANTIR MINHA OFERTA AGORA! 👉
+              SECURE MY OFFER NOW! 👉
             </Button>
             <div className="flex items-center gap-2 text-white/90">
               <Clock className="h-5 w-5" />
-              <span className="text-sm">Oferta por tempo limitado</span>
+              <span className="text-sm">Limited time offer</span>
             </div>
           </div>
 
           <div className="pt-6 text-sm text-white/80">
-            ✓ Garantia de 365 dias • ✓ Frete grátis • ✓ Pagamento seguro
+            ✓ 365-day guarantee • ✓ Free shipping • ✓ Secure payment
           </div>
         </div>
       </div>

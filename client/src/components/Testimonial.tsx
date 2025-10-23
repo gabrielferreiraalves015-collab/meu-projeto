@@ -8,24 +8,24 @@ import testimonial3 from "@assets/stock_images/professional_headsho_ea7127d3.jpg
 const testimonials = [
   {
     name: "Paul Chek",
-    role: "Fundador do Instituto CHEK",
+    role: "Founder of CHEK Institute",
     image: testimonial1,
     rating: 5,
-    text: "Os produtos BiOptimizers são genuinamente eficazes. Eu pessoalmente os uso e recomendo para meus clientes que buscam otimização de saúde de alto nível."
+    text: "BiOptimizers products are genuinely effective. I personally use them and recommend them to my clients seeking high-level health optimization."
   },
   {
     name: "Dr. Joseph Mercola",
-    role: "MD, Especialista em Saúde Natural",
+    role: "MD, Natural Health Expert",
     image: testimonial2,
     rating: 5,
-    text: "Se você não tem magnésio suficiente, seu corpo simplesmente não consegue funcionar de forma ideal... preparando o cenário para a deterioração da função metabólica."
+    text: "If you don't have enough magnesium, your body simply cannot function optimally... setting the stage for deterioration of metabolic function."
   },
   {
     name: "Andrea Rosanoff",
-    role: "Ph.D. em Nutrição",
+    role: "Ph.D. in Nutrition",
     image: testimonial3,
     rating: 5,
-    text: "O marcador cardiovascular mais importante é uma baixa proporção de magnésio para cálcio nas células. Magnesium Breakthrough aborda isso de forma abrangente."
+    text: "The most important cardiovascular marker is a low magnesium to calcium ratio in cells. Magnesium Breakthrough addresses this comprehensively."
   }
 ];
 
@@ -35,10 +35,10 @@ export function Testimonial() {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
           <h2 className="text-3xl md:text-5xl font-semibold">
-            Endossado por Especialistas de Classe Mundial
+            Endorsed by World-Class Experts
           </h2>
           <p className="text-lg text-muted-foreground">
-            Profissionais de saúde líderes confiam e recomendam Magnesium Breakthrough
+            Leading health professionals trust and recommend Magnesium Breakthrough
           </p>
         </div>
 
