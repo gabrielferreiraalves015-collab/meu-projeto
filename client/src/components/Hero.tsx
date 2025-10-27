@@ -3,13 +3,6 @@ import { Shield, Star } from "lucide-react";
 import productImage from "@assets/magnesium-bottle.png";
 
 export function Hero() {
-  const scrollToPricing = () => {
-    const pricingSection = document.getElementById('pricing-section');
-    if (pricingSection) {
-      pricingSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
-  };
-
   return (
     <div className="relative min-h-screen flex items-center">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-background -z-10" />
@@ -33,10 +26,15 @@ export function Hero() {
                 size="lg" 
                 className="bg-chart-2 hover:bg-chart-2 text-white border-chart-2 text-base w-full"
                 data-testid="button-hero-cta"
-                onClick={scrollToPricing}
+                asChild
               >
-                GET MY MAGNESIUM NOW! 👉
+                <a href="https://mr4ii.bemobtrcks.com/click/1?ns=c%3Dda6c1ffe-83de-45be-b5d4-07c3fde6d3b7..l%3D2..a%3D0..b%3D0" target="_blank" rel="noopener noreferrer">
+                  BUY WITH DISCOUNT OFFICIAL SITE
+                </a>
               </Button>
+              <p className="text-center text-sm font-semibold text-muted-foreground">
+                TAP ON THE BUTTON ABOVE FOR MORE INFORMATION
+              </p>
               <div className="flex items-center justify-center gap-4 text-sm">
                 <div className="flex items-center gap-2">
                   <Shield className="h-4 w-4 text-primary" />
