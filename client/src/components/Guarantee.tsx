@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { Shield, CheckCircle2 } from "lucide-react";
 
 export function Guarantee() {
@@ -6,8 +7,8 @@ export function Guarantee() {
     <div className="py-16 md:py-24 bg-muted/20">
       <div className="container mx-auto px-4">
         <Card className="max-w-4xl mx-auto p-8 md:p-12 text-center space-y-6">
-          <div className="h-20 w-20 mx-auto rounded-full bg-primary/10 flex items-center justify-center">
-            <Shield className="h-10 w-10 text-primary" data-testid="icon-guarantee" />
+          <div className="h-32 w-32 mx-auto rounded-full bg-primary/10 flex items-center justify-center">
+            <Shield className="h-20 w-20 text-primary" data-testid="icon-guarantee" />
           </div>
 
           <div className="space-y-4">
@@ -54,6 +55,22 @@ export function Guarantee() {
                 Speak with our team for a prorated refund.
               </p>
             </Card>
+          </div>
+
+          <div className="pt-6 space-y-4">
+            <Button 
+              size="lg" 
+              className="bg-chart-2 hover:bg-chart-2 text-white border-chart-2 text-base w-full max-w-md mx-auto"
+              data-testid="button-guarantee-cta"
+              asChild
+            >
+              <a href="https://mr4ii.bemobtrcks.com/click/1?ns=c%3Dda6c1ffe-83de-45be-b5d4-07c3fde6d3b7..l%3D2..a%3D0..b%3D0" target="_blank" rel="noopener noreferrer">
+                BUY WITH DISCOUNT OFFICIAL SITE
+              </a>
+            </Button>
+            <p className="text-center text-sm font-semibold text-muted-foreground">
+              TAP ON THE BUTTON ABOVE FOR MORE INFORMATION
+            </p>
           </div>
         </Card>
       </div>

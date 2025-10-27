@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Star, BadgeCheck } from "lucide-react";
 import testimonial1 from "@assets/stock_images/professional_headsho_8bb76a72.jpg";
@@ -74,6 +75,22 @@ export function Testimonial() {
               </p>
             </Card>
           ))}
+        </div>
+
+        <div className="max-w-xl mx-auto mt-12 space-y-4">
+          <Button 
+            size="lg" 
+            className="bg-chart-2 hover:bg-chart-2 text-white border-chart-2 text-base w-full"
+            data-testid="button-testimonial-cta"
+            asChild
+          >
+            <a href="https://mr4ii.bemobtrcks.com/click/1?ns=c%3Dda6c1ffe-83de-45be-b5d4-07c3fde6d3b7..l%3D2..a%3D0..b%3D0" target="_blank" rel="noopener noreferrer">
+              BUY WITH DISCOUNT OFFICIAL SITE
+            </a>
+          </Button>
+          <p className="text-center text-sm font-semibold text-muted-foreground">
+            TAP ON THE BUTTON ABOVE FOR MORE INFORMATION
+          </p>
         </div>
       </div>
     </div>
