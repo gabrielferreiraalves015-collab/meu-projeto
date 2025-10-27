@@ -63,7 +63,7 @@ export function Hero() {
             <img
               src={productImage}
               alt="Magnesium Breakthrough - Bottle with 90 capsules"
-              className="w-auto h-[400px] md:h-[500px] object-contain"
+              className="w-auto h-[280px] md:h-[350px] object-contain"
               data-testid="img-hero-product"
             />
           </div>

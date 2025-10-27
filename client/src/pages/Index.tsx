@@ -3,7 +3,6 @@ import { ProblemSection } from "@/components/ProblemSection";
 import { MagnesiumForms } from "@/components/MagnesiumForms";
 import { ProductInfo } from "@/components/ProductInfo";
 import { BlOtribe } from "@/components/BlOtribe";
-import { Pricing } from "@/components/Pricing";
 import { Guarantee } from "@/components/Guarantee";
 import { Testimonial } from "@/components/Testimonial";
 import { FinalCTA } from "@/components/FinalCTA";
@@ -23,7 +22,6 @@ export default function Index() {
       <MagnesiumForms />
       <ProductInfo />
       <BlOtribe />
-      <Pricing />
       <Guarantee />
       <Testimonial />
       <FinalCTA />
